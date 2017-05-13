@@ -97,3 +97,7 @@ ReactDOM.render(
   <Clock />,
   document.getElementById('root')
 );
+.
+
+// Correct
+this.setState({comment: 'Hello'});
