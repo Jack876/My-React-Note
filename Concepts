@@ -101,3 +101,9 @@ ReactDOM.render(
 
 // Correct
 this.setState({comment: 'Hello'});
+
+
+// Correct
+this.setState((prevState, props) => ({
+  counter: prevState.counter + props.increment
+}));
