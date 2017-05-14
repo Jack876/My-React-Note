@@ -107,3 +107,15 @@ this.setState({comment: 'Hello'});
 this.setState((prevState, props) => ({
   counter: prevState.counter + props.increment
 }));
+
+
+var ProductCategoryRow = React.createClass({
+  render: function() {
+    return (<tr><th colSpan="2">{this.props.category}</th></tr>);
+  }
+});
+
+var ProductRow = React.createClass({
+  render: function() {
+    var name = this.props.product.stocked ?
+      this.props.product.name :
