@@ -402,3 +402,4 @@ ReactDOM.render(
   <LoginControl />,
   document.getElementById('root')
 );
+声明变量并使用 if 语句是条件渲染组件的不错的方式，但有时你也想使用更简洁的语法，在 JSX 中有如下几种方法。
