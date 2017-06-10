@@ -107,3 +107,8 @@ function Greeting(props) {
   }
   return <GuestGreeting />;
 }
+ReactDOM.render(
+  // Try changing to isLoggedIn={true}:
+  <Greeting isLoggedIn={false} />,
+  document.getElementById('root')
+);
