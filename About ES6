@@ -97,3 +97,13 @@ p1.__proto__ === p2.__proto__
 上面代码中，p1和p2都是Point的实例，它们的原型都是Point.prototype，所以__proto__属性是相等的。
 
 这也意味着，可以通过实例的__proto__属性为“类”添加方法。
+
+我们将创建一个 Greeting 组件，它会根据用户是否登录来显示其中之一：
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
