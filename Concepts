@@ -37,6 +37,9 @@ class Clock extends React.Component{
 
 </body>
 
+ renderSquare(i) {
+    return <Square value={this.state.squares[i]} />;
+  }
 
 class Clock extends React.Component {
   constructor(props) {
