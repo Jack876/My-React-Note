@@ -606,3 +606,10 @@ class Board extends React.Component {
       squares: Array(9).fill(null),
     };
   }
+class Board extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      squares: Array(9).fill(null),
+    };
+  }
