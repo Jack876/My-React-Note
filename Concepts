@@ -598,3 +598,10 @@ React.createElement(
 
 
 <div className="sidebar" />
+
+
+React.createElement(
+  'div',
+  {className: 'sidebar'},
+  null
+)
