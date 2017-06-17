@@ -613,3 +613,6 @@ class Board extends React.Component {
       squares: Array(9).fill(null),
     };
   }
+<MyButton color="blue" shadowSize={2}>
+  Click Me
+</MyButton>
