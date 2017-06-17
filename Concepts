@@ -20,7 +20,7 @@ setInterval(tick, 1000);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title> new title </title>
 </head>
 <body>
 class Clock extends React.Component{
@@ -314,26 +314,6 @@ Constructor
 
 The constructor method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.
 
-A constr组件 & Props
-组件可以将UI切分成一些的独立的、可复用的部件，这样你就只需专注于构建每一个单独的部件。
-
-组件从概念上看就像是函数，它可以接收任意的输入值（称之为“props”），并返回一个需要在页面上展示的React元素。uctor can use the super keyword to call the constructor of a parent class.
-函数定义/类定义组件
-定义一个组件最简单的方式是使用JavaScript函数：
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-该函数是一个有效的React组件，它接收一个单一的“props”对象并返回了一个React元素。我们之所以称这种类型的组件为函数定义组件，是因为从字面上来看，它就是一个JavaScript函数。
-组件渲染
-在前面，我们遇到的React元素都只是DOM标签：
-
-const element = <div />;
-然而，React元素也可以是用户自定义的组件：
-
-const element = <Welcome name="Sara" />;
-当React遇到的元素是用户自定义的组件，它会将JSX属性作为单个对象传递给该组件,这个对象称之为“props”。
-例如,这段代码会在页面上渲染出"Hello,Sara":
 
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
@@ -344,10 +324,7 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
-元素变量
-你可以使用变量来储存元素。它可以帮助你有条件的渲染组件的一部分，而输出的其他部分不会更改。
 
-再来看两个新组件分别代表注销和登录：
 function LoginButton(props) {
   return (
     <button onClick={props.onClick}>
