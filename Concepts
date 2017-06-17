@@ -623,3 +623,6 @@ React.createElement(
   {color: 'blue', shadowSize: 2},
   'Click Me'
 )
+
+
+<div className="sidebar" />
