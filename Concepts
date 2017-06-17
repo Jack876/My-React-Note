@@ -605,3 +605,12 @@ React.createElement(
   {className: 'sidebar'},
   null
 )
+
+
+import React from 'react';
+import CustomButton from './CustomButton';
+
+function WarningButton() {
+  // 返回 React.createElement(CustomButton, {color: 'red'}, null);
+  return <CustomButton color="red" />;
+}
