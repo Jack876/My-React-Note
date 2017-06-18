@@ -154,3 +154,4 @@ const MyClass = class Me {
 let inst = new MyClass();
 inst.getClassName() // Me
 Me.name // ReferenceError: Me is not defined
+const MyClass = class { /* ... */ };
