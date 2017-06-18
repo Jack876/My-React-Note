@@ -639,3 +639,11 @@ const MyComponents = {
 function BlueDatePicker() {
   return <MyComponents.DatePicker color="blue" />;
 }
+class MyComponent extends React.Component {
+  handleClick = (e) => {
+    this.setState({clicked: true});
+  }
+  render() {
+    return <a href="#" onClick={this.handleClick}>Click me</a>;
+  }
+}
