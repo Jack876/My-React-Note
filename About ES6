@@ -112,3 +112,15 @@ ReactDOM.render(
   <Greeting isLoggedIn={false} />,
   document.getElementById('root')
 );
+class Point {
+
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  toString() {
+    return '(' + this.x + ', ' + this.y + ')';
+  }
+
+}
