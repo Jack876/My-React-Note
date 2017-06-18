@@ -46,8 +46,7 @@ pairs = evens.map(function (v) { return { even: v, odd: v + 1 }; });
 nums  = evens.map(function (v, i) { return v + i; });
 
 
-类的实例对象
-生成类的实例对象的写法，与 ES5 完全一样，也是使用new命令。前面说过，如果忘记加上new，像函数那样调用Class，将会报错。
+
 
 class Point {
   // ...
