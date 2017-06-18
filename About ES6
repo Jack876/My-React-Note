@@ -146,3 +146,8 @@ p2.printName() // "Oops"
 
 var p3 = new Point(4,2);
 p3.printName() // "Oops"
+const MyClass = class Me {
+  getClassName() {
+    return Me.name;
+  }
+};
