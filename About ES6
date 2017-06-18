@@ -151,3 +151,6 @@ const MyClass = class Me {
     return Me.name;
   }
 };
+let inst = new MyClass();
+inst.getClassName() // Me
+Me.name // ReferenceError: Me is not defined
