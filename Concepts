@@ -647,3 +647,11 @@ class MyComponent extends React.Component {
     return <a href="#" onClick={this.handleClick}>Click me</a>;
   }
 }
+class Foo {
+  constructor() {
+    return Object.create(null);
+  }
+}
+
+Foo()
+// TypeError: Class constructor Foo cannot be invoked without 'new'
