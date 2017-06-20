@@ -240,4 +240,14 @@ class CustomHTMLElement {
     return this.element.innerHTML;
   }
   
-  
+  set html(value) {
+    this.element.innerHTML = value;
+  }
+}
+
+var descriptor = Object.getOwnPropertyDescriptor(
+  CustomHTMLElement.prototype, "html"
+);
+
+"get" in descriptor  // true
+"set" in descriptor  // true
