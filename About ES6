@@ -230,3 +230,14 @@ inst.prop = 123;
 
 inst.prop
 // 'getter'
+
+class CustomHTMLElement {
+  constructor(element) {
+    this.element = element;
+  }
+
+  get html() {
+    return this.element.innerHTML;
+  }
+  
+  
