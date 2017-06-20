@@ -181,3 +181,12 @@ class Logger {
 const logger = new Logger();
 const { printName } = logger;
 printName(); // TypeError: Cannot read property 'print' of undefined
+class Logger {
+  constructor() {
+    this.printName = (name = 'there') => {
+      this.print(`Hello ${name}`);
+    };
+  }
+
+  // ...
+}
