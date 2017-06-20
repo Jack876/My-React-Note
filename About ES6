@@ -160,3 +160,11 @@ let person = new class {
 }('张三');
 
 person.sayName(); // "张三"
+
+class Logger {
+  constructor() {
+    this.printName = this.printName.bind(this);
+  }
+
+  // ...
+}
