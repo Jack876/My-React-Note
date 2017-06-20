@@ -251,3 +251,14 @@ var descriptor = Object.getOwnPropertyDescriptor(
 
 "get" in descriptor  // true
 "set" in descriptor  // true
+
+class Foo {
+  constructor(...args) {
+    this.args = args;
+  }
+  * [Symbol.iterator]() {
+    for (let arg of this.args) {
+      yield arg;
+    }
+  }
+}
