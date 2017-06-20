@@ -262,3 +262,9 @@ class Foo {
     }
   }
 }
+
+for (let x of new Foo('hello', 'world')) {
+  console.log(x);
+}
+// hello
+// world
