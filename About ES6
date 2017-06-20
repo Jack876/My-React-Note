@@ -222,3 +222,11 @@ class MyClass {
     console.log('setter: '+value);
   }
 }
+
+let inst = new MyClass();
+
+inst.prop = 123;
+// setter: 123
+
+inst.prop
+// 'getter'
