@@ -209,3 +209,5 @@ function selfish (target) {
 }
 
 const logger = selfish(new Logger());
+class Point {}
+Point.name // "Point"
