@@ -368,3 +368,10 @@ function createArray(...elements) {
       return Reflect.get(target, propKey, receiver);
     }
   };
+let target = [];
+  target.push(...elements);
+  return new Proxy(target, handler);
+}
+
+let arr = createArray('a', 'b', 'c');
+arr[-1] // c
