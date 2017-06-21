@@ -285,3 +285,12 @@ obj.count = 1
 //  setting count!
 //  2
 var proxy = new Proxy(target, handler);
+var proxy = new Proxy({}, {
+  get: function(target, property) {
+    return 35;
+  }
+});
+
+proxy.time // 35
+proxy.name // 35
+proxy.title // 35
