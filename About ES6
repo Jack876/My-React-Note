@@ -299,3 +299,4 @@ var handler = {};
 var proxy = new Proxy(target, handler);
 proxy.a = 'b';
 target.a // "b"
+var object = { proxy: new Proxy(target, handler) };
