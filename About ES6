@@ -294,3 +294,8 @@ var proxy = new Proxy({}, {
 proxy.time // 35
 proxy.name // 35
 proxy.title // 35
+var target = {};
+var handler = {};
+var proxy = new Proxy(target, handler);
+proxy.a = 'b';
+target.a // "b"
