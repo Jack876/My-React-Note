@@ -284,3 +284,4 @@ obj.count = 1
 //  getting count!
 //  setting count!
 //  2
+var proxy = new Proxy(target, handler);
