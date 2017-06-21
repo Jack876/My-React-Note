@@ -300,3 +300,11 @@ var proxy = new Proxy(target, handler);
 proxy.a = 'b';
 target.a // "b"
 var object = { proxy: new Proxy(target, handler) };
+var proxy = new Proxy({}, {
+  get: function(target, property) {
+    return 35;
+  }
+});
+
+let obj = Object.create(proxy);
+obj.time // 35
