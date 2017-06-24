@@ -472,3 +472,7 @@ class ColorPoint extends Point {
     this.color = color; // 正确
   }
 }
+let cp = new ColorPoint(25, 8, 'green');
+
+cp instanceof ColorPoint // true
+cp instanceof Point // true
