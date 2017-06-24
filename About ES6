@@ -478,3 +478,10 @@ cp instanceof ColorPoint // true
 cp instanceof Point // true
 Object.getPrototypeOf(ColorPoint) === Point
 // true
+class A {}
+
+class B extends A {
+  constructor() {
+    super();
+  }
+}
