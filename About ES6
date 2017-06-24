@@ -450,3 +450,12 @@ class ColorPoint extends Point {
 }
 
 let cp = new ColorPoint(); // ReferenceError
+class ColorPoint extends Point {
+}
+
+// 等同于
+class ColorPoint extends Point {
+  constructor(...args) {
+    super(...args);
+  }
+}
