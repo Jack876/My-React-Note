@@ -459,3 +459,9 @@ class ColorPoint extends Point {
     super(...args);
   }
 }
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
