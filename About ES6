@@ -476,3 +476,5 @@ let cp = new ColorPoint(25, 8, 'green');
 
 cp instanceof ColorPoint // true
 cp instanceof Point // true
+Object.getPrototypeOf(ColorPoint) === Point
+// true
