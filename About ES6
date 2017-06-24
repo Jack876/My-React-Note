@@ -427,3 +427,8 @@ const el = dom.div({},
 );
 
 document.body.appendChild(el);
+class Point {
+}
+
+class ColorPoint extends Point {
+}
