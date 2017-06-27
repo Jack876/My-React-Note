@@ -542,3 +542,8 @@ function Point(x = 0, y = 0) {
 
 var p = new Point();
 p // { x: 0, y: 0 }
+
+function foo(x = 5) {
+  let x = 1; // error
+  const x = 2; // error
+}
