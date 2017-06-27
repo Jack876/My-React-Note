@@ -522,3 +522,7 @@ function log(x, y) {
 log('Hello') // Hello World
 log('Hello', 'China') // Hello China
 log('Hello', '') // Hello World
+
+if (typeof y === 'undefined') {
+  y = 'World';
+}
