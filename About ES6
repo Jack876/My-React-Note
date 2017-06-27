@@ -547,3 +547,8 @@ function foo(x = 5) {
   let x = 1; // error
   const x = 2; // error
 }
+
+function foo(x, x, y = 1) {
+  // ...
+}
+// SyntaxError: Duplicate parameter name not allowed in this context
