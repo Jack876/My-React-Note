@@ -630,3 +630,11 @@ function setItem (key, value) {
 function clear () {
   ms = {};
 }
+
+module.exports = { getItem, setItem, clear };
+// 等同于
+module.exports = {
+  getItem: getItem,
+  setItem: setItem,
+  clear: clear
+};
