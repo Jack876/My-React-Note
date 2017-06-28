@@ -617,3 +617,16 @@ function getPoint() {
 
 getPoint()
 // {x:1, y:10}
+var ms = {};
+
+function getItem (key) {
+  return key in ms ? ms[key] : null;
+}
+
+function setItem (key, value) {
+  ms[key] = value;
+}
+
+function clear () {
+  ms = {};
+}
