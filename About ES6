@@ -562,3 +562,9 @@ foo() // 100
 
 x = 100;
 foo() // 101
+var foo = 'bar';
+var baz = {foo};
+baz // {foo: "bar"}
+
+// 等同于
+var baz = {foo: foo};
