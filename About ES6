@@ -661,3 +661,13 @@ var cart = {
     this._wheels = value;
   }
 }
+
+var obj = {
+  class () {}
+};
+
+// 等同于
+
+var obj = {
+  'class': function() {}
+};
