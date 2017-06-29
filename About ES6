@@ -676,3 +676,8 @@ var obj = {
     yield 'hello world';
   }
 };
+// 方法一
+obj.foo = true;
+
+// 方法二
+obj['a' + 'bc'] = 123;
