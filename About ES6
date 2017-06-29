@@ -653,3 +653,11 @@ var cart = {
     this._wheels = value;
   }
 }
+
+ set wheels (value) {
+    if (value < this._wheels) {
+      throw new Error('数值太小了！');
+    }
+    this._wheels = value;
+  }
+}
