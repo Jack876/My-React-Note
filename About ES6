@@ -681,3 +681,8 @@ obj.foo = true;
 
 // 方法二
 obj['a' + 'bc'] = 123;
+
+var obj = {
+  foo: true,
+  abc: 123
+};
