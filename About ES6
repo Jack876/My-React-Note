@@ -671,3 +671,8 @@ var obj = {
 var obj = {
   'class': function() {}
 };
+var obj = {
+  * m(){
+    yield 'hello world';
+  }
+};
