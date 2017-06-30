@@ -686,3 +686,8 @@ var obj = {
   foo: true,
   abc: 123
 };
+"\uD842\uDFB7"
+// "𠮷"
+
+"\u20BB7"
+// " 7"
