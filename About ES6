@@ -707,3 +707,10 @@ hell\u{6F} // 123
 '\x7A' === 'z' // true
 '\u007A' === 'z' // true
 '\u{7A}' === 'z' // true
+var s = "𠮷";
+
+s.length // 2
+s.charAt(0) // ''
+s.charAt(1) // ''
+s.charCodeAt(0) // 55362
+s.charCodeAt(1) // 57271
