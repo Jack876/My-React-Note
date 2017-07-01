@@ -753,3 +753,9 @@ Array.from(namesSet) // ['a', 'b']
 
 Array.from([1, 2, 3])
 // [1, 2, 3]
+function foo() {
+  var args = [...arguments];
+}
+
+// NodeList对象
+[...document.querySelectorAll('div')]
