@@ -759,3 +759,5 @@ function foo() {
 
 // NodeList对象
 [...document.querySelectorAll('div')]
+Array.from({ length: 3 });
+// [ undefined, undefined, undefined ]
