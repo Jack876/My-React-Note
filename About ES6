@@ -761,3 +761,6 @@ function foo() {
 [...document.querySelectorAll('div')]
 Array.from({ length: 3 });
 // [ undefined, undefined, undefined ]
+const toArray = (() =>
+  Array.from ? Array.from : obj => [].slice.call(obj)
+)();
