@@ -750,3 +750,6 @@ Array.from('hello')
 
 let namesSet = new Set(['a', 'b'])
 Array.from(namesSet) // ['a', 'b']
+
+Array.from([1, 2, 3])
+// [1, 2, 3]
