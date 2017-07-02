@@ -809,3 +809,10 @@ const arr = [
 
 [...[], 1]
 // [1]
+
+// ES5 的写法
+function f(x, y, z) {
+  // ...
+}
+var args = [0, 1, 2];
+f.apply(null, args);
