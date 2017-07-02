@@ -801,3 +801,8 @@ add(...numbers) // 42
 function f(v, w, x, y, z) { }
 var args = [0, 1];
 f(-1, ...args, 2, ...[3]);
+
+const arr = [
+  ...(x > 0 ? ['a'] : []),
+  'b',
+];
