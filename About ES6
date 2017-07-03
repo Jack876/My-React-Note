@@ -864,3 +864,9 @@ var o = {
     return "Hello!";
   }
 };
+
+var birth = '2000/01/01';
+
+var Person = {
+
+  name: '张三',
