@@ -870,3 +870,9 @@ var birth = '2000/01/01';
 var Person = {
 
   name: '张三',
+
+function getPoint() {
+  var x = 1;
+  var y = 10;
+  return {x, y};
+}
