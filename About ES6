@@ -858,3 +858,9 @@ var o = {
     return "Hello!";
   }
 };
+
+var o = {
+  method: function() {
+    return "Hello!";
+  }
+};
