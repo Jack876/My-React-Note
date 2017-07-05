@@ -902,3 +902,10 @@ var s1 = Symbol('foo');
 var s2 = Symbol('foo');
 
 s1 === s2 // false
+
+var sym = Symbol('My symbol');
+
+"your symbol is " + sym
+// TypeError: can't convert symbol to string
+`your symbol is ${sym}`
+// TypeError: can't convert symbol to string
