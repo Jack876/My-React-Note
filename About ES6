@@ -894,3 +894,6 @@ const obj = {
 };
 const sym = Symbol(obj);
 sym // Symbol(abc)
+
+var s1 = Symbol();
+var s2 = Symbol();
