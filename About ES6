@@ -886,3 +886,11 @@ s2 // Symbol(bar)
 
 s1.toString() // "Symbol(foo)"
 s2.toString() // "Symbol(bar)"
+
+const obj = {
+  toString() {
+    return 'abc';
+  }
+};
+const sym = Symbol(obj);
+sym // Symbol(abc)
