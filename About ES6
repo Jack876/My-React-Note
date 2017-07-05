@@ -871,3 +871,9 @@ function getPoint() {
   var y = 10;
   return {x, y};
 }
+
+
+let s = Symbol();
+
+typeof s
+// "symbol"
