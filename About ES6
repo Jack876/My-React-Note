@@ -877,3 +877,12 @@ let s = Symbol();
 
 typeof s
 // "symbol"
+
+var s1 = Symbol('foo');
+var s2 = Symbol('bar');
+
+s1 // Symbol(foo)
+s2 // Symbol(bar)
+
+s1.toString() // "Symbol(foo)"
+s2.toString() // "Symbol(bar)"
