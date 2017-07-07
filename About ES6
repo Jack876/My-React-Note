@@ -960,3 +960,11 @@ const myObject = {
 };
 
 myObject // Object {[object Object]: "valueB"}
+
+const person = {
+  sayName() {
+    console.log('hello!');
+  },
+};
+
+person.sayName.name   //
