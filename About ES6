@@ -941,3 +941,12 @@ let obj = {
 };
 
 obj.hello() // hi
+
+// 报错
+var foo = 'bar';
+var bar = 'abc';
+var baz = { [foo] };
+
+// 正确
+var foo = 'bar';
+var baz = { [foo]: 'abc'};
