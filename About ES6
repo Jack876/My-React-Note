@@ -933,3 +933,11 @@ var a = {
 a['first word'] // "hello"
 a[lastWord] // "world"
 a['last word'] // "world"
+
+let obj = {
+  ['h' + 'ello']() {
+    return 'hi';
+  }
+};
+
+obj.hello() // hi
