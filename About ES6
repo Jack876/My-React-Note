@@ -950,3 +950,13 @@ var baz = { [foo] };
 // 正确
 var foo = 'bar';
 var baz = { [foo]: 'abc'};
+
+const keyA = {a: 1};
+const keyB = {b: 2};
+
+const myObject = {
+  [keyA]: 'valueA',
+  [keyB]: 'valueB'
+};
+
+myObject // Object {[object Object]: "valueB"}
