@@ -922,3 +922,10 @@ let obj = {
   [propKey]: true,
   ['a' + 'bc']: 123
 };
+
+var lastWord = 'last word';
+
+var a = {
+  'first word': 'hello',
+  [lastWord]: 'world'
+};
