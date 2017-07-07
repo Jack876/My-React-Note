@@ -915,3 +915,10 @@ var obj = {
   foo: true,
   abc: 123
 };
+
+let propKey = 'foo';
+
+let obj = {
+  [propKey]: true,
+  ['a' + 'bc']: 123
+};
