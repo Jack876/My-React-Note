@@ -909,3 +909,9 @@ var sym = Symbol('My symbol');
 // TypeError: can't convert symbol to string
 `your symbol is ${sym}`
 // TypeError: can't convert symbol to string
+
+
+var obj = {
+  foo: true,
+  abc: 123
+};
