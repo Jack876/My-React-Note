@@ -1004,3 +1004,6 @@ function divs () {
 
 const set = new Set(divs());
 set.size // 56
+
+divs().forEach(div => set.add(div));
+set.size // 56
