@@ -1041,3 +1041,9 @@ var obj = new Proxy({}, {
     return Reflect.set(target, key, value, receiver);
   }
 });
+obj.count = 1
+//  setting count!
+++obj.count
+//  getting count!
+//  setting count!
+//  2
