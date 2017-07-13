@@ -1047,3 +1047,9 @@ obj.count = 1
 //  getting count!
 //  setting count!
 //  2
+obj.count = 1
+//  setting count!
+++obj.count
+//  getting count!
+//  setting count!
+//  2
