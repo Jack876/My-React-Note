@@ -1073,3 +1073,13 @@ class Foo {
 
 Foo()
 // TypeError: Class constructor Foo cannot be invoked without 'new'
+
+class Point {
+  // ...
+}
+
+// 报错
+var point = Point(2, 3);
+
+// 正确
+var point = new Point(2, 3);
