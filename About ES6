@@ -1055,3 +1055,12 @@ class Point {
 class Point {
   constructor() {}
 }
+
+class Foo {
+  constructor() {
+    return Object.create(null);
+  }
+}
+
+new Foo() instanceof Foo
+// false
