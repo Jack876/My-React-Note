@@ -1047,3 +1047,11 @@ obj.count = 1
 //  getting count!
 //  setting count!
 //  2
+
+class Point {
+}
+
+// 等同于
+class Point {
+  constructor() {}
+}
