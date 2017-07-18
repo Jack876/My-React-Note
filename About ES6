@@ -1105,3 +1105,10 @@ point.hasOwnProperty('x') // true
 point.hasOwnProperty('y') // true
 point.hasOwnProperty('toString') // false
 point.__proto__.hasOwnProperty('toString') // true
+
+try {
+  Object.defineProperty(target, property, attributes);
+  // success
+} catch (e) {
+  // failure
+}
