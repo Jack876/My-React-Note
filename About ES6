@@ -1150,3 +1150,6 @@ var loggedObj = new Proxy(obj, {
     return Reflect.has(target, name);
   }
 });
+
+Function.prototype.apply.call(Math.floor, undefined, [1.75]) // 1
+
