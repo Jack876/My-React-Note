@@ -1119,3 +1119,9 @@ if (Reflect.defineProperty(target, property, attributes)) {
 } else {
   // failure
 }
+
+// 老写法
+'assign' in Object // true
+
+// 新写法
+Reflect.has(Object, 'assign') // true
