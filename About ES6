@@ -1168,3 +1168,7 @@ Reflect.preventExtensions(target)
 Reflect.getOwnPropertyDescriptor(target, name)
 Reflect.getPrototypeOf(target)
 Reflect.setPrototypeOf(target, prototype)
+
+var regex = new RegExp('xyz', 'i');
+// 等价于
+var regex = /xyz/i;
