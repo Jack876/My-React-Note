@@ -1203,3 +1203,8 @@ hw.next()
 
 hw.next()
 // { value: undefined, done: true }
+
+function * foo(x, y) { ··· }
+function *foo(x, y) { ··· }
+function* foo(x, y) { ··· }
+function*foo(x, y) { ··· }
