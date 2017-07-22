@@ -1222,3 +1222,8 @@ var generator = f();
 setTimeout(function () {
   generator.next()
 }, 2000);
+
+(function (){
+  yield 1;
+})()
+// SyntaxError: Unexpected number
