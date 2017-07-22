@@ -1208,3 +1208,7 @@ function * foo(x, y) { ··· }
 function *foo(x, y) { ··· }
 function* foo(x, y) { ··· }
 function*foo(x, y) { ··· }
+
+function* gen() {
+  yield  123 + 456;
+}
