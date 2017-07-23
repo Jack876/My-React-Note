@@ -1242,3 +1242,8 @@ var b = 2;
 var c = 3;
 
 var [a, b, c] = [1, 2, 3];
+
+let [foo, [[bar], baz]] = [1, [[2], 3]];
+foo // 1foo // 1
+bar // 2
+baz // 3
