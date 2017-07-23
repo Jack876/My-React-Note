@@ -1227,3 +1227,8 @@ setTimeout(function () {
   yield 1;
 })()
 // SyntaxError: Unexpected number
+
+window.a = 1;
+a // 1
+a = 2;
+window.a // 2
