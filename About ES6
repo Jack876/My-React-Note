@@ -1277,3 +1277,8 @@ var [foo = true] = [];
 foo // true
 [x, y = 'b'] = ['a']; // x='a', y='b'
 [x, y = 'b'] = ['a', undefined]; // x='a', y='b'
+
+var [x = 1] = [undefined];
+x // 1
+var [x = 1] = [null];
+x // null
