@@ -1287,3 +1287,10 @@ function f() {
 console.log('aaa');
 } l
 et [x = f()] = [1];
+
+let x;
+if ([1][0] === undefined) {
+x = f();
+} else {
+x = [1][0];
+}
