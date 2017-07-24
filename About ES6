@@ -1272,3 +1272,8 @@ yield a;
 } v
 ar [first, second, third, fourth, fifth, sixth] = fibs();
 sixth // 5
+
+var [foo = true] = [];
+foo // true
+[x, y = 'b'] = ['a']; // x='a', y='b'
+[x, y = 'b'] = ['a', undefined]; // x='a', y='b'
