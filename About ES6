@@ -1282,3 +1282,8 @@ var [x = 1] = [undefined];
 x // 1
 var [x = 1] = [null];
 x // null
+
+function f() {
+console.log('aaa');
+} l
+et [x = f()] = [1];
