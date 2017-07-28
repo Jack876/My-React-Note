@@ -1324,3 +1324,11 @@ let b = NaN;
 set.add(a);
 set.add(b);
 set // Set {NaN}
+
+let set = new Set();
+
+set.add({});
+set.size // 1
+
+set.add({});
+set.size // 2
