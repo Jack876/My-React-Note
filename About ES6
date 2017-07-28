@@ -1332,3 +1332,11 @@ set.size // 1
 
 set.add({});
 set.size // 2
+s.size // 2
+
+s.has(1) // true
+s.has(2) // true
+s.has(3) // false
+
+s.delete(2);
+s.has(2) // false
