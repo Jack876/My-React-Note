@@ -1376,3 +1376,18 @@ class ColorPoint extends Point {
     super(...args);
   }
 }
+
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+class ColorPoint extends Point {
+  constructor(x, y, color) {
+    this.color = color; // ReferenceError
+    super(x, y);
+    this.color = color; // 正确
+  }
+}
