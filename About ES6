@@ -1396,3 +1396,11 @@ let cp = new ColorPoint(25, 8, 'green');
 
 cp instanceof ColorPoint // true
 cp instanceof Point // true
+
+class A {}
+
+class B extends A {
+  constructor() {
+    super();
+  }
+}
