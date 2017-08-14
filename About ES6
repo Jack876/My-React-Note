@@ -1340,3 +1340,9 @@ s.has(3) // false
 
 s.delete(2);
 s.has(2) // false
+
+class Point {
+}
+
+class ColorPoint extends Point {
+}
