@@ -1357,3 +1357,12 @@ class ColorPoint extends Point {
     return this.color + ' ' + super.toString(); // 调用父类的toString()
   }
 }
+
+class Point { /* ... */ }
+
+class ColorPoint extends Point {
+  constructor() {
+  }
+}
+
+let cp = new ColorPoint(); // ReferenceError
