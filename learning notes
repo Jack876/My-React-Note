@@ -30,3 +30,8 @@ function tick() {
 }
 
 setInterval(tick, 1000);
+
+ReactDOM.render(
+  <Clock />,
+  document.getElementById('root')
+);
