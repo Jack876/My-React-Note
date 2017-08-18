@@ -80,3 +80,11 @@ var obj = {};
 obj[Symbol.iterator] = () => 1;
 
 [...obj] // TypeError: [] is not a function
+
+var $iterator = ITERABLE[Symbol.iterator]();
+var $result = $iterator.next();
+while (!$result.done) {
+  var x = $result.value;
+  // ...
+  $result = $iterator.next();
+}
