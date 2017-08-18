@@ -74,3 +74,9 @@ let iterable = {
 for (let item of iterable) {
   console.log(item); // undefined, undefined, undefined
 }
+
+var obj = {};
+
+obj[Symbol.iterator] = () => 1;
+
+[...obj] // TypeError: [] is not a function
